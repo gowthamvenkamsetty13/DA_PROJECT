@@ -247,8 +247,51 @@ body {
   margin-bottom: 24px;
 }
 
+.dashboard-intro {
+  max-width: 680px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.dashboard-preview {
+  margin: 0 0 24px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px rgba(32, 42, 48, 0.08);
+}
+
+.dashboard-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dashboard-preview figcaption {
+  padding: 12px 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .tableau-embed:empty {
   display: none;
+}
+
+.tableau-embed.loaded {
+  min-height: 760px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px rgba(32, 42, 48, 0.08);
+}
+
+.tableau-embed iframe {
+  display: block;
+  width: 100%;
+  min-height: 760px;
+  border: 0;
 }
 
 .dashboard-grid {

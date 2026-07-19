@@ -5,9 +5,16 @@
   <div class="section-heading">
     <p class="eyebrow">Interactive Dashboard</p>
     <h1>Comprehensive House Data Analysis</h1>
+    <p class="dashboard-intro">Explore the full Tableau Public dashboard or use the preview below to see the house-price analysis.</p>
+    <a class="primary-action" href="https://public.tableau.com/app/profile/venkata.venkamsetty/viz/ComprehensiveHousePriceAnalysis/ComprehensiveHousePriceAnalysis?publish=yes" target="_blank" rel="noopener noreferrer">Open Tableau Dashboard</a>
   </div>
 
-  <div id="tableau-embed" class="tableau-embed" data-tableau-url=""></div>
+  <figure class="dashboard-preview">
+    <img src="{{ url_for('static', filename='images/tableau-house-price-dashboard.png') }}" alt="Preview of the Comprehensive House Price Analysis Tableau dashboard">
+    <figcaption>Comprehensive House Price Analysis dashboard preview</figcaption>
+  </figure>
+
+  <div id="tableau-embed" class="tableau-embed" data-tableau-url="https://public.tableau.com/views/ComprehensiveHousePriceAnalysis/ComprehensiveHousePriceAnalysis?:showVizHome=no"></div>
 
   <section class="dashboard-grid" id="local-dashboard" aria-label="Comprehensive house data analysis dashboard">
     <aside class="kpi-column">
